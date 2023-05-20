@@ -1,0 +1,21 @@
+{
+  "name": "csit214-flydreamair-project-main-3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "FlyDreamAir is an international airline, launching a new frequent flyer program. The program allows customers to accumulate points through making flights with the airline, which can then be spent with an online storefront.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/node": "7.15.4",
+    "@babel/preset-env": "7.15.6",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

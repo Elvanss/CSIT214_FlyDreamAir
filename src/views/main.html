@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="/css/global.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <script src="js/document.js"></script>
+      <script src="/js/userSystem.js"></script>
+      <script src="/js/account.js"></script>
+   </head>
+   <body>
+      <img src="/image/FlyDreamAirLogo.png" alt ="Logo" id="fda" style="width:300px;">
+      <div class="nav">
+         <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="earn.html">Earn</a></li>
+            <li><a href="spend.html">Spend</a></li>
+            <li style="float: right">
+               <a href="account.html">Account</a> |
+               <a href="#" onclick="signOut()">Log Out</a>
+             </li> 
+         </ul>
+      </div>
+      <div id="main_page">
+         <table>
+            <tr>
+               <th style="color: white;">
+                  <h2 style="font-size:36px;">Welcome <span id="name"></span>!</h2>
+                  <p style="font-size:17px;">FlyDreamAir's new Loyalty Rewards system allows you to earn rewards for frequently flying with us! Check out the store by clicking the "spend" button below, or the "earn" button to learn more about how to obtain more points.</p>
+                  <p style="color:#ffb703; font-size: 25px"> Your FlyDreamAir Points: <span id="points"></span></p>
+               </th>
+            </tr>
+            <tr>
+               <th></th>
+            </tr>
+            <tr>
+               <th>
+                  <h2 style="color:white; text-align: left; margin-bottom: 10px; font-size: 36px;">Our Popular Flight</h2>
+               </th>
+            <tr>
+               <td colspan="3">
+                  <hr style="margin-top: 0px;">
+               </td>
+            </tr>
+            </tr>
+         </table>
+         <div class="general_box">
+            <!-- Panel 1 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/Melbourne.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0; text-align: center; text-transform: uppercase;">Sydney to Melbourne</p>
+                    <p style="text-align: center;">From 24/05/2023 to 30/06/2023</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $120 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel1()">More Info</button>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 2 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/Japan.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0; text-align: center; text-transform: uppercase;"> Sydney to Tokyo</p>
+                    <p style="text-align: center;">From 14/08/2023 to 14/09/2023</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $260 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel2()">More Info</button>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 3 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/Singapore.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0; text-align: center; text-transform: uppercase;">Brisbane to Singapore</p>
+                    <p style="text-align: center;">From 01/10/2023 to 30/11/2023</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $400 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel3()">More Info</button>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 4 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/London.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0 ;text-align: center; text-transform: uppercase;">Sydney to London</p>
+                    <p style="text-align: center;">From 12/08/2023 to 30/01/2024</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $1300 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel4()">More Info</button>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 5 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/Adelaide.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0; text-align: center; text-transform: uppercase;">Sydney to Adelaide</p>
+                    <p style="text-align: center;">From 01/07/2023 to 30/07/2023</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $190 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel5()">More Info</button>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 6 -->
+            <div class="border_box_1">
+              <div class="box_info center">
+                <div class="banner">
+                  <img src="/image/Dubai.jpeg" alt="img_1" id="main_list">
+                </div>
+                <div class="content">
+                  <div class="title_info">
+                    <p style="font-size: 28px; margin-top: 0; margin-bottom: 0; text-align: center; text-transform: uppercase;">Brisbane to Dubai</p>
+                    <p style="text-align: center;">From 15/04/2023 to 15/05/2023</p>
+                  </div>
+                  <div class="price_info">
+                    <div class="price" style="font-size: 32px; text-align: right; color:#b87333; font-weight: bold;">From $1600 AUD*</div>
+                  </div>
+                  <br><br>
+                  <button class="more_info" onclick="togglePopupPanel6()">More Info</button>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>                  
+      </div>
+      <!-- Popup -->
+      <div id="popup-1" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel1()">&times;</div>
+            <h1>Sydney to Melbourne</h1>
+            <p>Melbourne is Australia's mecca for all things trendy and tasty. The city offers up exquisite dining, exhilarating sport and abundant opportunities to experience art.<br>
+               A perfect blend of rich cultural history and new age trends is waiting for you in Melbourne. As the sun goes down, the city comes to life with a vibrant dining scene as well as events and exhibitions. Explore its bustling laneways, trendy neighbourhoods and sophisticated foodie scene to get a taste of what Melbourne is all about.
+            </p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <th>Departure</th>
+                  <th>Transit</th>
+                  <th>Arrival</th>
+                  <th>Promotion Date</th>
+                  <th>Base fare* (after promotion)</th>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>N/A</td>
+                  <td>Melbourne</td>
+                  <td>Tuesday, Friday</td>
+                  <td>From 180 AUD</td>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>N/A</td>
+                  <td>Melbourne</td>
+                  <td>Monday, Thursday</td>
+                  <td>From 120 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="popup-2" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel2()">&times;</div>
+            <h1>Sydney to Japan</h1>
+            <p>Japan is a country of contrasts.  From the snowy northern reaches of Hokkaido to the subtropical islands of Okinawa.  From the historic shrines and castles of the feudal towns to the futuristic electronic superstores in Tokyo.  And as a foodie, who could ignore the contradictions of a simple bowl of rice that must remain completely unadorned to the complex and perfectly balanced traditional kaiseki-ryōri menu.</p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <td>Departure</td>
+                  <td>Transit</td>
+                  <td>Arrival</td>
+                  <td>Promotion Date</td>
+                  <td>Base fare* (after promotion)</td>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>N/A</td>
+                  <td>Japan</td>
+                  <td>Tuesday</td>
+                  <td>From 260 AUD</td>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>N/A</td>
+                  <td>Japan</td>
+                  <td>Thursday, Saturday</td>
+                  <td>From 330 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="popup-3" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel3()">&times;</div>
+            <h1>Brisbane to Singapore</h1>
+            <p>Singapore, the Asian Tiger is vibrant and ever changing, at once a city, an island, and a nation with more than 5 million inhabitants: it has become an icon worldwide. Along with Bangkok and Hong Kong, Singapore is one of the most popular tourist destinations in South East Asia.</p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <th>Departure</th>
+                  <th>Transit</th>
+                  <th>Arrival</th>
+                  <th>Promotion Date</th>
+                  <th>Base fare* (after promotion)</th>
+               </tr>
+               <tr>
+                  <td>Brisbane</td>
+                  <td>N/A</td>
+                  <td>Singapore</td>
+                  <td>Monday</td>
+                  <td>From 400 AUD</td>
+               </tr>
+               <tr>
+                  <td>Brisbane</td>
+                  <td>N/A</td>
+                  <td>Singapore</td>
+                  <td>Wednesday</td>
+                  <td>From 480 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="popup-4" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel4()">&times;</div>
+            <h1>Sydney to London</h1>
+            <p>The capital of the United Kingdom is a thriving multicultural metropolis. The contrast between the spectacular historic sights, the grind of a big city, and the lively cultural and foodie scene makes London an interesting and exciting destination. Wander through St. James park, visit Westminster Abbey, explore the streets of Shoreditch, and take a ride up the River Thames. London's incredible shopping, endless sights, friendly locals, and vibrant nightlife offer something for every kind of traveler.</p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <td>Departure</td>
+                  <td>Transit</td>
+                  <td>Arrival</td>
+                  <td>Promotion Date</td>
+                  <td>Base fare* (after promotion)</td>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>Shanghai</td>
+                  <td>London</td>
+                  <td>Monday</td>
+                  <td>From 1300 AUD</td>
+               </tr>
+               <tr>
+                  <td>Sydney</td>
+                  <td>Doha</td>
+                  <td>London</td>
+                  <td>Friday</td>
+                  <td>From 2650 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="popup-5" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel5()">&times;</div>
+            <h1>Melbourne to Adelaide</h1>
+            <p>Colourful cultural events, a thriving restaurant and small bar scene and fine wine make Adelaide your next must-visit destination.
+               The bustling city of Adelaide is brimming with events that excite, restaurants that inspire and beaches that make you feel at ease. What’s more, Adelaide sits right at the foot of three incredible wine regions that produce both world-renowned and under-the-radar wines. So when you visit, make sure you leave enough time to experience the city and explore its stunning surrounds.
+            </p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <td>Departure</td>
+                  <td>Transit</td>
+                  <td>Arrival</td>
+                  <td>Promotion Date</td>
+                  <td>Base fare* (after promotion)</td>
+               </tr>
+               <tr>
+                  <td>Melbourne</td>
+                  <td>N/A</td>
+                  <td>Adelaide</td>
+                  <td>Tuesday, Friday</td>
+                  <td>From 190 AUD</td>
+               </tr>
+               <tr>
+                  <td>Melbourne</td>
+                  <td>N/A</td>
+                  <td>Adelaide</td>
+                  <td>Saturday</td>
+                  <td>From 250 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="popup-6" class="popup">
+         <div class="popup-content">
+            <div class="close-btn" onclick="togglePopupPanel6()">&times;</div>
+            <h1>Melbourne to Dubai</h1>
+            <p>Dubai is full of contrasts. There's the glittering skyline, made up of skyscrapers so tall they defy imagination; the modern collection of stores and eateries, offering up every kind of option a traveler could possibly want; and the luxurious hotels, ready to welcome even the most discerning traveler in style and excess.</p>
+            <hr>
+            <h2>FLIGHT SCHEDULE</h2>
+            <table class="table-info">
+               <tr>
+                  <td>Departure</td>
+                  <td>Transit</td>
+                  <td>Arrival</td>
+                  <td>Promotion Date</td>
+                  <td>Base fare* (after promotion)</td>
+               </tr>
+               <tr>
+                  <td>Melbourne</td>
+                  <td>Sri Lanka</td>
+                  <td>Dubai</td>
+                  <td>Thursday</td>
+                  <td>From 1600 AUD</td>
+               </tr>
+               <tr>
+                  <td>Melbourne</td>
+                  <td>N/A</td>
+                  <td>Dubai</td>
+                  <td>Friday</td>
+                  <td>From 3000 AUD</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!-- End of Popup -->
+   </body>
+</html>

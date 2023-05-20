@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "title": "Le Labo Santal 33",
+            "cost": 800,
+            "img": "shop/lelabo.jpg"
+        },
+        {
+            "title": "Sydney to Bali flight ticket",
+            "cost": 2000,
+            "img": "shop/bali.jpg"
+        },
+        {
+            "title": "iPhone 14 Pro Max",
+            "cost": 1000,
+            "img": "shop/iphone.png"
+        },
+        {
+            "title": "Event Cinemas Ticket",
+            "cost": 10,
+            "img": "shop/EventCinemas.png"
+        },
+        {
+            "title": "American Tourister Luggage",
+            "cost": 700,
+            "img": "shop/luggage.jpg"
+        },
+        {
+            "title": "Sydney to Melbourne flight ticket",
+            "cost": 750,
+            "img": "shop/melbourne.jpg"
+        },
+        {
+            "title": "Apple Pencil",
+            "cost": 600,
+            "img": "shop/pencil.jpg"
+        },
+        {
+            "title": "Toy Plane",
+            "cost": 50,
+            "img": "shop/toy.jpg"
+        }
+    ]
+}
