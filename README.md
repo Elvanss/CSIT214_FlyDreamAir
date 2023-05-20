@@ -1,12 +1,14 @@
 # CSIT214-FlyDreamAir-Project
-FlyDreamAir is an international airline, launching a new frequent flyer program. The program allows customers to accumulate points through making flights with the airline, which can then be spent with an online storefront. 
+FlyDreamAir, an international airline, is launching a new frequent flyer program. The program aims to enable customers to accumulate points by flying with the airline, which can later be redeemed through an online storefront.
 
-This application will:
-  - Design and produce a program to track user frequent flyer points.
-  - The website will have a login & accounts system.
-  - Allow the user to redeem a variety of rewards from their frequent flyer points.
+The objective of this application is as follows:
+  - Develop and implement a program to efficiently track and manage user frequent flyer points.
+  - Create a user-friendly website featuring a secure login and accounts system.
+  - Provide users with the ability to redeem a diverse range of rewards using their accumulated frequent flyer points.
  
-The system is implemented using Node.js. The documentation for Node.js can be found here: https://nodejs.org/en/docs/
+To accomplish this, the system is built upon Node.js, a robust server environment, and utilizes Express.js, a powerful Node.js framework specifically designed for managing servers and routes. Detailed documentation for Node.js and Express.js can be accessed at the following links: [Node.js Documentation](https://nodejs.org/en/docs) and [Express.js API Reference](https://expressjs.com/en/5x/api.html).
+
+By employing these technologies, FlyDreamAir aims to deliver a seamless and efficient experience for its valued customers, enhancing their engagement with the airline while offering exciting rewards for their loyalty.
 
 How to launch web client:
 1. Download NodeJs from https://nodejs.org/en/.
