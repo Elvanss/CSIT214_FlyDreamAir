@@ -179,9 +179,9 @@ async function getRank() {
   
 	  if (points >= 100 && points <= 1000) {
 		return { rank: 'Bronze', image: '/image/bronze.png' };
-	  } else if (points >= 1001 && points <= 10000) {
+	  } else if (points >= 1001 && points <= 5000) {
 		return { rank: 'Silver', image: '/image/silver.png' };
-	  } else if (points >= 10001 && points <= 20000) {
+	  } else if (points >= 5001) {
 		return { rank: 'Gold', image: '/image/gold.png' };
 	  } else {
 		return { rank: 'No Rank', image: '' };
