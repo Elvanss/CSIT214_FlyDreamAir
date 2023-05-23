@@ -16,19 +16,7 @@ body {
     width: 100%;
     max-width: 300px;
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 50px 60px 70px;
-}
-
-#main_earn {
-    width: 100%;
-    max-width: 1100px;
-    max-height: 900px;
-    position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
@@ -37,7 +25,7 @@ body {
 
 .nav{
     background-color: white;
-    width: 90%;
+    width: 85%;
     margin: auto;
     border-radius: 30px;
     font-size: 15px;
@@ -51,18 +39,6 @@ body {
 
 .nav li{
     float: left;
-}
-
-.tasks {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-.tasks li {
-    margin-right: 20px;
-    position: relative;
 }
 
 .nav a{
@@ -85,16 +61,3 @@ hr {
     border: 3px solid rgb(189, 189, 189);
     border-radius: 5px;
 }
-
-#notification {
-    display: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-  }
