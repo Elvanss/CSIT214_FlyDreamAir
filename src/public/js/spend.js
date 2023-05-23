@@ -38,16 +38,18 @@ async function populateItems(){
   });
 }
 
-async function addToCart(index){
+async function addToCart(index) {
   const items = await getItems;
-  // Check to see if part already exists in cart and if so increment the quantity by one.
   var exists = document.getElementById(index);
-  if(exists != null){
-    var qty = exists.getElementsByClassName("qty")[0];
-    qty.placeholder++;
-    qty.value++;
+
+  if (exists != null) {
+    var qty = exists.getElementsByClassName("qtyValue")[0];
+    var currentQty = parseInt(qty.textContent);
+    qty.textContent = currentQty + 1;
+    updateTotal();
     return;
   }
+
 
   // Otherwise, create a cart item entry
   var item = items[index];
@@ -75,7 +77,6 @@ function incrementQty(button) {
   qtyValue.textContent = qty;
   updateTotal();
 }
-
 function decrementQty(button) {
   var qtyValue = button.nextElementSibling;
   var qty = parseInt(qtyValue.textContent);
