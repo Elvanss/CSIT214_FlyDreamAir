@@ -12,6 +12,8 @@ By employing these technologies, FlyDreamAir aims to deliver a seamless and effi
 
 How to launch web client:
 1. Download NodeJs from https://nodejs.org/en/.
-2. Run the command prompt in the web folder directory, and use the command "node server.js" in the web directory.
-3. Open your browser of choice, and enter "http://localhost:8000/" into the URL bar.
-4. Sign up or login to begin (All usernames and passwords are currently stored locally, and will therefore only work on your local drive).
+2. Run the command prompt in the CSIT214-PROJECT directory, recommendly using the VSCode to open the project folders. 
+3. Open Terminal, running these commands: "npm install express", and "npm install --save-exact body-parser@1.19.0 nodemon@2.0.12 @babel/core@7.15.5 @babel/node@7.15.4 @babel/preset-env@7.15.6". (Just in case the system found the vulnerablities, run this command: "npm audit fix --force")
+4. Run the command "npm start" on the terminal.
+6. Open your browser of choice, and enter "http://localhost:3000/" into the URL bar.
+7. Sign up or login to begin (All usernames and passwords are currently stored locally, and will therefore only work on your local drive).
