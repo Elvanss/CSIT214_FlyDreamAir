@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/js/spend.js"></script>
+        <script src="/js/userSystem.js"></script>
+        <script src="/js/account.js"></script>
+
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/spend.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <img src="/image/FlyDreamAirLogo.png" alt ="Logo" id="fda" style="width:400px">
+        <div class="nav">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="earn.html">Earn</a></li>
+                <li><a href="spend.html">Spend</a></li>
+                <li style="float: right">
+                    <a href="account.html">Account</a> |
+                    <a href="#" onclick="signOut()">Log Out</a>
+                  </li> 
+                <li style="float: right;font-size: 16px;font-weight:bold;color:#8338ec;"> FlyDreamAir Points: <span id="points"></li>
+            </ul>
+        </div>
+            <div class ="spend_page" >
+                <h1>Use FlyDreamAir Points</h1>
+                <br>
+                <form action = '#'>
+                    <label for="sort" style="font-size: 15px;">Sort</label>
+                    <select name="sort" id="sort" onchange="populateItems().then()" style="font-size: 14px; background-color: #f2f2f2; border: none;padding: 5px;border-radius: 5px">
+                        <option value="priceLowHigh">Price: Low to High</option>
+                        <option value="priceHighLow">Price: High to Low</option>
+                        <option value="name">Name Only</option>
+                    </select>
+                </form>
+                <div id="tb" style="align-content: center;">
+                    <table id="shop"></table>
+                    <div class="shop" id="shopDiv"> </div>
+                </div>        
+            </div>
+            <div class="cart">
+                <h2>Cart</h2>
+                <div class="cartList" id="cartList"></div>
+                <hr>
+                <div class="total">
+                    Total Cost: <span id="totalCost">0</span> Points<br>
+                    <p id="buyErr" style="color:red;"></p>
+                </div>
+                <hr>
+                <button class ="btn" onclick="clearCart()">Clear cart</button> 
+                <button class ="btn" onclick="buy()">Buy</button> 
+            </div>
+        </div>    
+    </body>
+</html>

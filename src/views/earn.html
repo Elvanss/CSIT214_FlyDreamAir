@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/js/userSystem.js"></script>
+    <script src="/js/earn.js"></script>
+    <script src="/js/account.js"></script>
+
+    <link rel="stylesheet" href="/css/earn.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+
+  <body>
+    <img
+      src="/image/FlyDreamAirLogo.png"
+      alt="Logo"
+      id="fda"
+      style="width: 300px"
+    />
+
+    <div class="nav">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="earn.html">Earn</a></li>
+        <li><a href="spend.html">Spend</a></li>
+        <li style="float: right">
+          <a href="account.html">Account</a> |
+          <a href="#" onclick="signOut()">Log Out</a>
+        </li>        
+        <li style="float: right;font-size: 16px;font-weight:bold;color:#8338ec;"> FlyDreamAir Points: <span id="navPoints"></span></li>
+      </ul>
+    </div>
+    <div class="earn-page">
+      <h1>Enter Your Flight Details To Earn Points</h1>
+      <form id="flightForm">
+        <label for="flightNumber">Flight Number:</label>
+        <input type="text" id="flightNumber" required /><br /><br />
+
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" required /><br /><br />
+
+        <label for="fromLocation">Departure:</label>
+        <select id="fromLocation" required>
+          <option value="">Select location</option>
+          <option value="Sydney">Sydney</option>
+          <option value="Melbourne">Melbourne</option>
+          <option value="Brisbane">Brisbane</option>
+          <option value="Perth">Perth</option>
+          </select><br/><br/>
+
+        <label for="toLocation">Destination:</label>
+        <select id="toLocation" required>
+          <option value="">Select location</option>
+          <option value="Sydney">Sydney</option>
+          <option value="Melbourne">Melbourne</option>
+          <option value="Brisbane">Brisbane</option>
+          <option value="Perth">Perth</option>
+          </select><br/><br/>
+
+        <button type="submit">Earn</button>
+      </form>
+
+      <div id="result" style="display: none">
+        <h2>Points Earned:</h2>
+        <p id="points"></p>
+      </div>
+    </div>
+  </body>
+</html>
