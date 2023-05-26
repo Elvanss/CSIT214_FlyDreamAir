@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto&display=swap');
+
+body {
+    background: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/image/BackgroundImg.jpg);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#fda{
+    font-size: 60px;
+    font-weight: 100;
+    color: rgb(255, 230, 0);
+}
+
+#main {
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+}
+
+.nav{
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.nav ul{
+    list-style-type: none;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.nav li{
+    float: left;
+}
+
+.nav a{
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgb(189, 189, 189);
+    border-radius: 30px;
+}
+button{
+    font-family: 'Dosis', sans-serif;
+}
+
+hr {
+    /* border-color: rgb(189, 189, 189); */
+    border: 3px solid rgb(189, 189, 189);
+    border-radius: 5px;
+}
