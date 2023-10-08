@@ -2,15 +2,15 @@
 FlyDreamAir, an international airline, is launching a new frequent flyer program. The program aims to enable customers to accumulate points by flying with the airline, which can later be redeemed through an online storefront.
 
 GROUP MEMBER:
-Huy Minh Dinh – Project Manager
+1. Huy Minh Dinh – Project Manager
 
-Benjamin Lyle Fenning – Business Analyst
+2. Benjamin Lyle Fenning – Business Analyst
 
-Quang Minh Nguyen – Business Analyst
+3. Quang Minh Nguyen – Business Analyst
 
-Minh Duy Le – Product Developer
+4. Minh Duy Le – Product Developer
 
-Bang Luong Hoa – Product Developer
+5. Bang Luong Hoa – Product Developer
 
 The objective of this application is as follows:
   - Develop and implement a program to efficiently track and manage user frequent flyer points.
