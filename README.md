@@ -3,13 +3,9 @@ FlyDreamAir, an international airline, is launching a new frequent flyer program
 
 GROUP MEMBER:
 1. Huy Minh Dinh – Project Manager
-
 2. Benjamin Lyle Fenning – Business Analyst
-
 3. Quang Minh Nguyen – Business Analyst
-
 4. Minh Duy Le – Product Developer
-
 5. Bang Luong Hoa – Product Developer
 
 The objective of this application is as follows:
